@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+       <!-- Header -->
+    <div id="wrapper">
+     <header id="header-container">
+       
+        <div id="brand-logo">
+            <a href="javascript:void(0);" id="nav-branding"><img src="./assets/img/logo.svg" alt="logo" id="logo"/></a>
+        </div>
+
+        <!-- Navbar -->
+        <nav id="navbar">
+          <ul id="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#new" class="nav-link">New</a>
+            </li>
+            <li class="nav-item">
+                <a href="#popular" class="nav-link">Popular</a>
+            </li>
+            <li class="nav-item">
+                <a href="#trending" class="nav-link">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a href="#categories" class="nav-link">Categories</a>
+            </li>
+          </ul> 
+        </nav>
+        <img src="./assets/img/icon-menu.svg" alt="icon menu open" class="open-menu"/>
+        <img src="./assets/img/icon-menu-close.svg" alt="icon menu close" class="closed-menu"/>
+     </header> 
+    
+     <!-- Main -->
+
+    <main id="main-container">
+     <!-- Hero -->
+<div id="contain"> <!--modificare-->
+     <section id="hero-section">
+        <div id="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="./assets/img/image-web-3-desktop.jpg"/>
+            <img src="./assets/img/image-web-3-mobile.jpg" alt="puzzle image" id="hero-img" class="toggle" />
+            </picture>
+        </div>
+        
+        <div id="col">
+            <div id="home" class="hero-title">
+                <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+
+            <div id="hero-text">
+                <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                <button id="btn" type="submit">Read more</button>
+            </div>
+        </div>
+     </section>
+
+     <!-- New Section -->
+        <section id="new" class="news">
+            <div id="new-section">
+                <h2>New</h2>
+
+                <div class="art-news">
+                    <h3>Hydrogen VS Electric Cars</h3>
+                    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </div>
+            
+                <div class="art-news">
+                    <h3>The Downsides of AI Artistry</h3>
+                    <p>What are the possible adverse   effects of on-demand AI image  generation?</p>
+                </div>
+            
+                <div class="art-news">
+                    <h3>Is VC Funding Drying Up?</h3>
+                    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </div>
+           
+            </div>
+        </section>
+</div>
+     <!-- Article -->
+     <article id="articles-container">
+        <div id="article">
+            <!-- First article -->
+            <div class="item first-item" id="popular">
+                <img src="./assets/img/image-retro-pcs.jpg" alt="retro pc" id="first-item" class="art-imgs"/>
+            <div class="article-text">
+                <h2>01</h2>
+                <h3>Reviving Retro PCs</h3>
+                <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+            </div>
+
+            <!-- Second article -->
+            <div class="item second-item" id="trending" >
+                <img src="./assets/img/image-top-laptops.jpg" alt="keyboard image" id="second-item" class="art-imgs"/>
+                <div class="article-text">
+                    <h2>02</h2>
+                    <h3>Top 10 Laptops of 2022</h3>
+                    <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+
+            <!-- Third article -->
+            <div class="item third-item" id="categories">
+                <img src="./assets/img/image-gaming-growth.jpg" alt="gamepad" id="third-item" class="art-imgs"/>
+                <div class="article-text">
+                    <h2>03</h2>
+                    <h3>The Growth of Gaming</h3>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+
+        </div>
+     </article>
+
+  </main>
+
+    <!-- Footer -->
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/alessandra-casole" title="GitHub profile" target="_blank">Alessandra Casole</a>.
+
+    </footer>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
