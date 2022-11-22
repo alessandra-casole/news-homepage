@@ -32,14 +32,14 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/alessandra-casole/news-homepage.git
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://alessandra-casole.github.io/news-homepage/
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
