@@ -196,8 +196,6 @@ body {
   }
   #header-container {
     align-items: flex-start;
-    position: sticky;
-    top: 0;
     background-color: hsl(36deg, 100%, 99%);
   }
   #navbar {
