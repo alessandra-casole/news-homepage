@@ -166,6 +166,7 @@ body {
 #main-container #articles-container .item img {
   width: 29.6%;
   flex-shrink: 0;
+  object-fit: contain;
 }
 #main-container #articles-container .item h2 {
   font-size: 2.1rem;
