@@ -128,6 +128,11 @@ body {
   font-size: 2.1rem;
   margin-bottom: -0.4em;
 }
+
+#main-container #new a {
+  text-decoration: none;
+}
+
 #main-container #new h3 {
   color: hsl(36deg, 100%, 99%);
   font-size: 1.28rem;
@@ -137,7 +142,6 @@ body {
 #main-container #new h3:hover {
   color: hsl(35deg, 77%, 62%);
   transition: 0.5s ease;
-  cursor: pointer;
 }
 #main-container #new .art-news {
   padding: 2em 0;
@@ -173,6 +177,11 @@ body {
   color: hsl(233deg, 8%, 79%);
   margin-top: -0.3em;
 }
+
+#main-container #articles-container .item a {
+  text-decoration: none;
+}
+
 #main-container #articles-container .item h3 {
   line-height: 2.2;
   margin-top: -0.3em;
@@ -181,7 +190,6 @@ body {
 #main-container #articles-container .item h3:hover {
   color: hsl(5deg, 85%, 63%);
   transition: 0.5s ease;
-  cursor: pointer;
 }
 
 .attribution {
