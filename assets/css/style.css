@@ -96,26 +96,27 @@ body {
 #main-container #hero-text {
   color: hsl(236deg, 13%, 42%);
 }
+
+#main-container #hero-text p {
+  margin-bottom: 2.6em;
+}
+
 #main-container #hero-text #btn {
-  padding: 0.9em;
-  width: 56%;
+  padding: 1.2em 2.2em;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-weight: 700;
-  border: none;
   font-size: 0.9375rem;
   background-color: hsl(5deg, 85%, 63%);
   color: hsl(36deg, 100%, 99%);
-  margin: 1.7em 0;
   cursor: pointer;
-  max-width: 220px;
 }
 #main-container #hero-text #btn:hover {
   background-color: hsl(240deg, 100%, 5%);
   transition: 0.5s ease;
 }
 #main-container #new {
-  margin-top: 2.5em;
+  margin-top: 5.5em;
 }
 #main-container #new-section {
   padding: 1.2em;
@@ -247,9 +248,8 @@ body {
     margin-right: 0.8em;
     margin-top: 1.5em;
   }
-  #main-container #hero-text #btn {
-    width: 55%;
-    margin-top: 2em;
+  #main-container #hero-text p {
+    margin-bottom: 3em;
   }
   #main-container #new {
     margin-top: 0;
@@ -268,7 +268,7 @@ body {
     line-height: 2;
   }
   #main-container #articles-container {
-    margin-top: 3em;
+    margin-top: 5em;
   }
   #main-container #articles-container #article {
     flex-direction: row;
