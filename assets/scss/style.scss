@@ -159,6 +159,10 @@ body {
             margin-bottom: -0.4em;
         }
         
+        a {
+            text-decoration: none;
+        }
+        
         h3 {
             color: $bg-clr;
             font-size: 1.28rem;
@@ -169,7 +173,6 @@ body {
             &:hover {
                 color: $primary-clr1;
                 transition: .5s ease;
-                cursor: pointer;
             }
         }
         
@@ -216,6 +219,10 @@ body {
                 color: $nmb-clr;
                 margin-top: -0.3em;
             }
+            
+            a {
+                text-decoration: none;
+            }
 
             h3 {
                 line-height: 2.2;
@@ -225,7 +232,6 @@ body {
                 &:hover {
                     color: $primary-clr2;
                     transition: .5s ease;
-                    cursor: pointer;
                 }
             }
         }
