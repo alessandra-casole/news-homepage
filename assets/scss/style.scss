@@ -207,7 +207,8 @@ body {
 
             img {
                 width: 29.6%; 
-                flex-shrink: 0; 
+                flex-shrink: 0;
+                object-fit: contain;
             }
 
             h2 {
