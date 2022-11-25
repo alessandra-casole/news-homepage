@@ -16,6 +16,7 @@ $ff: 'Inter', sans-serif;
     font-family: $ff;
     list-style-type: none;
     line-height: 1.7;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -95,6 +96,8 @@ body {
     display: none;
     z-index: 100;
     cursor: pointer;
+    position: fixed;
+    right: 0.9em;
 }
 
 // Main
