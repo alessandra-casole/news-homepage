@@ -222,7 +222,7 @@ body {
   .navbar {
     position: relative;
     min-height: 0;
-    width: fit-content;
+    width: fit-content !important;
   }
   .navbar ul {
     display: flex;
