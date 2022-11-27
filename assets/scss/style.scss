@@ -40,27 +40,43 @@ body {
 
 // Header
 #header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
     padding: 1.8em 0.9em 0.8em 0.9em;
 
-    #logo {
-        width: 73%;
-    }
+    .brand-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
+        #logo {
+            width: 73%;
+        }
+    }
+}
+
+.toggle-navigation {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 // Nav
-#navbar {
-    display: none;
+.navbar {
     position: fixed;
     top: 0;
     z-index: 2;
     right: 0;
     min-height: 100vh;
-    width: 68%;
+    width: 0;
     background-color: $bg-clr;
+    transition: 0.5s ease;
+    overflow-x: hidden;
+
+    .close-btn {
+        position: absolute;
+        top: 1.87em;
+        right: 1.1em;
+        cursor: pointer;
+    }
 
     ul {
         margin-left: 1.5em;
@@ -69,35 +85,23 @@ body {
         z-index: 999;
         margin-top: 6.5em;
         font-size: 1.2rem;
-    }
 
-    li {
-        margin-top: 1em;
-        display: flex;
-    }
+        li {
+            margin-top: 1em;
+            display: flex;
 
-    a {
-        text-decoration: none;
-        color: $bx-clr;
+            a {
+                text-decoration: none;
+                color: $bx-clr;
 
-        &:hover, &:active {
-            color:$primary-clr2;
-            transition: .5s ease;
+                &:hover,
+                &:active {
+                    color: $primary-clr2;
+                    transition: .5s ease;
+                }
+            }
         }
     }
-}
-
-.open-menu {
-    display: block;
-    cursor: pointer;
-}
-
-.closed-menu {
-    display: none;
-    z-index: 100;
-    cursor: pointer;
-    position: fixed;
-    right: 0.9em;
 }
 
 // Main
@@ -217,10 +221,11 @@ body {
                 object-fit: contain;
             }
 
-            h2 {
+            .p-title {
                 font-size: 2.1rem;
                 color: $nmb-clr;
                 margin-top: -0.3em;
+                font-weight: 700;
             }
             
             a {
@@ -260,19 +265,22 @@ body {
 @media screen and (min-width: 768px) {
     
     // Header
-    .open-menu {
-         display: none;   
+    #header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .brand-logo {
+            align-items: flex-start;
+        }
     }
     
-    #header-container {
-        align-items: flex-start;
-        background-color: $bg-clr;
-        // box-shadow: 0 2px 6px 0 rgb(0 0 0 / 17%);
+    .toggle-navigation {
+        display: none;
     }
 
     // Nav
-    #navbar {
-        display: block;
+    .navbar {
         position: relative;
         min-height: 0;
         width: fit-content;
@@ -285,27 +293,27 @@ body {
             font-size: 1rem;
 
             li {
-                margin-top: 0;  
-            }
+                margin-top: 0;
 
-            a {
-                color: $ph-clr ;
+                a {
+                    color: $ph-clr ;
+                }
             }
         }
     }
-
 }
 
 @media screen and (min-width: 900px) {
 
     // Header
     #header-container {
-        align-items: center;
         padding-top: 5em;
         padding-bottom: 1.6em;
 
-        #logo {
-            width: 90%;
+        .brand-logo {
+            #logo {
+                width: 90%;
+            }
         }
     }
     // Main
