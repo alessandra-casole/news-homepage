@@ -9,42 +9,47 @@
 </head>
 <body>
        <!-- Header -->
-    <div id="wrapper">
+    <div class="wrapper">
      <header id="header-container">
        
-        <div id="brand-logo">
+        <div class="brand-logo">
             <a href="/" id="nav-branding"><img src="./assets/img/logo.svg" alt="name of site - Home" id="logo"/></a>
+            <button class="toggle-navigation" aria-expanded="false" aria-controls="sidenav">
+               <img src="./assets/img/icon-menu.svg" alt="icon menu open" id="open-menu" onclick="openNav()" />
+            </button>
         </div>
 
         <!-- Navbar -->
-        <nav id="navbar">
+        <nav id="sidenav" class="navbar">
+            <button class="toggle-navigation" aria-expanded="true" aria-controls="sidenav">
+               <img src="./assets/img/icon-menu-close.svg" alt="icon menu close" id="closed-menu" class="close-btn"
+                   onclick="closeNav()">
+            </button>
           <ul id="nav-menu">
             <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link" onclick="closeNav()">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#new" class="nav-link">New</a>
+                <a href="#new" class="nav-link" id="snd" onclick="closeNav()">New</a>
             </li>
             <li class="nav-item">
-                <a href="#popular" class="nav-link">Popular</a>
+                <a href="#popular" class="nav-link" id="trd" onclick="closeNav()">Popular</a>
             </li>
             <li class="nav-item">
-                <a href="#trending" class="nav-link">Trending</a>
+                <a href="#trending" class="nav-link" id="fr" onclick="closeNav()">Trending</a>
             </li>
             <li class="nav-item">
-                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#categories" class="nav-link" id="fh" onclick="closeNav()">Categories</a>
             </li>
           </ul> 
         </nav>
-        <img src="./assets/img/icon-menu.svg" alt="icon menu open" class="open-menu"/>
-        <img src="./assets/img/icon-menu-close.svg" alt="icon menu close" class="closed-menu"/>
      </header> 
     
      <!-- Main -->
 
     <main id="main-container">
      <!-- Hero -->
-<div id="contain"> <!--modificare-->
+    <div id="contain"> <!--modificare-->
      <section id="hero-section">
         <div id="hero">
             <picture>
@@ -95,7 +100,7 @@
             <div class="item first-item" id="popular">
                 <img src="./assets/img/image-retro-pcs.jpg" alt="illuminated retro pc" id="first-item" class="art-imgs"/>
             <div class="article-text">
-                <h2>01</h2>
+                <p class="p-title">01</p>
                 <a href=""><h3>Reviving Retro PCs</h3></a>
                 <p>What happens when old PCs are given modern upgrades?</p>
             </div>
@@ -105,7 +110,7 @@
             <div class="item second-item" id="trending" >
                 <img src="./assets/img/image-top-laptops.jpg" alt="illuminated keyboard with red numbers" id="second-item" class="art-imgs"/>
                 <div class="article-text">
-                    <h2>02</h2>
+                    <p class="p-title">02</p>
                     <a href=""><h3>Top 10 Laptops of 2022</h3></a>
                     <p>Our best picks for various needs and budgets.</p>
                 </div>
@@ -115,7 +120,7 @@
             <div class="item third-item" id="categories">
                 <img src="./assets/img/image-gaming-growth.jpg" alt="raised gamepad" id="third-item" class="art-imgs"/>
                 <div class="article-text">
-                    <h2>03</h2>
+                    <p class="p-title">03</p>
                     <a href=""><h3>The Growth of Gaming</h3></a>
                     <p>How the pandemic has sparked fresh opportunities.</p>
                 </div>
