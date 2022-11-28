@@ -9,7 +9,7 @@ const frLink = document.querySelector("#fr");
 const fhLink = document.querySelector("#fh");
 
 
-const wrapper = document.querySelector(".wrapper");
+const wrapper = document.querySelector("body");
 const toggle = document.querySelector(".toggle")
 const btn = document.querySelector("#btn");
 
@@ -31,7 +31,7 @@ menuOpen.addEventListener("click", () => {
 })
 
   menuClose.addEventListener("click", () => {
-  wrapper.style.background=("#fefdf9");
+  wrapper.style.background=("#fffdfa");
   toggle.style.filter=("brightness(100%)");
   btn.style.filter=("brightness(100%)");
   Nsec.style.filter=("brightness(100%)");
@@ -41,7 +41,7 @@ menuOpen.addEventListener("click", () => {
 })
 
   fstLink.addEventListener("click", () => {
-  wrapper.style.background=("#fefdf9");
+  wrapper.style.background=("#fffdfa");
   toggle.style.filter=("brightness(100%)");
   btn.style.filter=("brightness(100%)");
   Nsec.style.filter=("brightness(100%)");
@@ -51,7 +51,7 @@ menuOpen.addEventListener("click", () => {
 })
 
 sndLink.addEventListener("click", () => {
-  wrapper.style.background=("#fefdf9");
+  wrapper.style.background=("#fffdfa");
   toggle.style.filter=("brightness(100%)");
   btn.style.filter=("brightness(100%)");
   Nsec.style.filter=("brightness(100%)");
@@ -61,7 +61,7 @@ sndLink.addEventListener("click", () => {
 })
 
 trdLink.addEventListener("click", () => {
-  wrapper.style.background=("#fefdf9");
+  wrapper.style.background=("#fffdfa");
   toggle.style.filter=("brightness(100%)");
   btn.style.filter=("brightness(100%)");
   Nsec.style.filter=("brightness(100%)");
@@ -71,7 +71,7 @@ trdLink.addEventListener("click", () => {
 })
 
 frLink.addEventListener("click", () => {
-  wrapper.style.background=("#fefdf9");
+  wrapper.style.background=("#fffdfa");
   toggle.style.filter=("brightness(100%)");
   btn.style.filter=("brightness(100%)");
   Nsec.style.filter=("brightness(100%)");
@@ -81,7 +81,7 @@ frLink.addEventListener("click", () => {
 })
 
 fhLink.addEventListener("click", () => {
-  wrapper.style.background=("#fefdf9");
+  wrapper.style.background=("#fffdfa");
   toggle.style.filter=("brightness(100%)");
   btn.style.filter=("brightness(100%)");
   Nsec.style.filter=("brightness(100%)");
