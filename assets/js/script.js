@@ -1,94 +1,30 @@
-// Background-color
 
 const menuOpen = document.querySelector("#open-menu");
 const menuClose = document.querySelector("#closed-menu");
-const fstLink = document.querySelector(".nav-link");
-const sndLink = document.querySelector("#snd");
-const trdLink = document.querySelector("#trd");
-const frLink = document.querySelector("#fr");
-const fhLink = document.querySelector("#fh");
 
+const links = document.querySelectorAll(".nav-link");
+const overlays = document.querySelectorAll(".overlay");
 
-const wrapper = document.querySelector("body");
-const toggle = document.querySelector(".toggle")
-const btn = document.querySelector("#btn");
+if(menuOpen.addEventListener("click", function() {
+    document.body.style.background="#807e89";
+    overlays.forEach((overlay) => {
+      overlay.classList.add("bright-dark-color");
+    });
+}));  else if (menuClose.addEventListener("click", function() {
+      document.body.style.background="#fffdfa";
+      overlays.forEach((overlay) => {
+      overlay.classList.remove("bright-dark-color");
+      }); 
+}));
 
-const Nsec = document.querySelector("#new-section");
-const fI = document.querySelector("#first-item");
-const sI = document.querySelector("#second-item");
-const tI = document.querySelector("#third-item");
-
-
-
-menuOpen.addEventListener("click", () => {
-  wrapper.style.background=("#807e89");
-  btn.style.filter=("brightness(0.5)");
-  toggle.style.filter=("brightness(0.5)");
-  Nsec.style.filter=("brightness(0.5)");
-  fI.style.filter=("brightness(0.5)");
-  sI.style.filter=("brightness(0.5)");
-  tI.style.filter=("brightness(0.5)");
-})
-
-  menuClose.addEventListener("click", () => {
-  wrapper.style.background=("#fffdfa");
-  toggle.style.filter=("brightness(100%)");
-  btn.style.filter=("brightness(100%)");
-  Nsec.style.filter=("brightness(100%)");
-  fI.style.filter=("brightness(100%)");
-  sI.style.filter=("brightness(100%)");
-  tI.style.filter=("brightness(100%)");
-})
-
-  fstLink.addEventListener("click", () => {
-  wrapper.style.background=("#fffdfa");
-  toggle.style.filter=("brightness(100%)");
-  btn.style.filter=("brightness(100%)");
-  Nsec.style.filter=("brightness(100%)");
-  fI.style.filter=("brightness(100%)");
-  sI.style.filter=("brightness(100%)");
-  tI.style.filter=("brightness(100%)");
-})
-
-sndLink.addEventListener("click", () => {
-  wrapper.style.background=("#fffdfa");
-  toggle.style.filter=("brightness(100%)");
-  btn.style.filter=("brightness(100%)");
-  Nsec.style.filter=("brightness(100%)");
-  fI.style.filter=("brightness(100%)");
-  sI.style.filter=("brightness(100%)");
-  tI.style.filter=("brightness(100%)");
-})
-
-trdLink.addEventListener("click", () => {
-  wrapper.style.background=("#fffdfa");
-  toggle.style.filter=("brightness(100%)");
-  btn.style.filter=("brightness(100%)");
-  Nsec.style.filter=("brightness(100%)");
-  fI.style.filter=("brightness(100%)");
-  sI.style.filter=("brightness(100%)");
-  tI.style.filter=("brightness(100%)");
-})
-
-frLink.addEventListener("click", () => {
-  wrapper.style.background=("#fffdfa");
-  toggle.style.filter=("brightness(100%)");
-  btn.style.filter=("brightness(100%)");
-  Nsec.style.filter=("brightness(100%)");
-  fI.style.filter=("brightness(100%)");
-  sI.style.filter=("brightness(100%)");
-  tI.style.filter=("brightness(100%)");
-})
-
-fhLink.addEventListener("click", () => {
-  wrapper.style.background=("#fffdfa");
-  toggle.style.filter=("brightness(100%)");
-  btn.style.filter=("brightness(100%)");
-  Nsec.style.filter=("brightness(100%)");
-  fI.style.filter=("brightness(100%)");
-  sI.style.filter=("brightness(100%)");
-  tI.style.filter=("brightness(100%)");
-})
+links.forEach((link) => {
+  link.addEventListener("click", function() {
+      document.body.style.background="#fffdfa";
+      overlays.forEach((overlay) => {
+      overlay.classList.remove("bright-dark-color");
+    }); 
+  });
+});
 
 
 function openNav() {
